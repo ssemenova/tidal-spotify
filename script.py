@@ -27,7 +27,7 @@ def get_tidal_find_track_url():
 def get_tidal_playlist(playlist_id):
     return 'https://listen.tidal.com/v1/playlists/' + playlist_id
 def get_tidal_user_playlists():
-    return 'https://listen.tidal.com/v1/users/' + tidal_id + '/playlists'
+    return 'https://listen.tidal.com/v1/users/' + tidal_id + '/playlists?offset=0&limit=50&order=DATE_UPDATED&orderDirection=DESC&countryCode=DE'
 
 # Endpoints not in spotipy
 def get_discover_weekly_playlist():
